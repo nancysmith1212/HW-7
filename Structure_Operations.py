@@ -57,6 +57,9 @@ def ComputeReactions(nodes):
     # sum of forces in y direction
 
     # sum of forces in x direction
+       # Continue from here
+    # Sum of moments about the pin
+    # gets the x and y coordinate of the node corresponding to the pin 
     [pin_x, pin_y] = pin_node.location 
     # gets the x and y coordinate of the node associated with the roller
     [roller_x, roller_y] = roller_node.location 
@@ -96,4 +99,5 @@ def ComputeReactions(nodes):
         pin_node.AddReactionXForce(pin_x_reaction)
         pin_node.AddReactionYForce(pin_y_reaction)
     
+
     
