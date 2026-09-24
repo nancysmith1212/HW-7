@@ -15,10 +15,11 @@ def Length(bar):
     # find a node of the bar
     bar_node = bar.init_node
     # convert the node and bar to a vector
-    
+    vec = BarNodeToVector(bar_node, bar)
     # find the length of a vector
-    
+    length = VectorTwoNorm(vec)
     # output the vector length
+    return length 
 
 # Find two norm (magnitude) of a vector
 def VectorTwoNorm(vector):
@@ -75,9 +76,6 @@ def SineVectors(local_x_vec,other_vec):
 def CosineBars(local_x_bar,other_bar):
     return 
 
-# Sine of angle from local x bar to the other bar
-def SineBars(local_x_bar,other_bar):
-    return
 # Sine of angle from local x bar to the other bar
 def SineBars(local_x_bar,other_bar):
     return
